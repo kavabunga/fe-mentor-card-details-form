@@ -1,0 +1,45 @@
+.card {
+  aspect-ratio: 447/245;
+  position: relative;
+  background-image: url('./images/bg-card-front.png');
+  background-size: cover;
+}
+
+.cardNumber {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cardholderName {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.expirationDate {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
