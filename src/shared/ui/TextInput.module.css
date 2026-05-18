@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  align-self: start;
+}
+
+.input {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  transition: border-color 0.3s ease;
+
+  &.isValid {
+    border-color: var(--success);
+  }
+
+  &.isError {
+    border-color: var(--error);
+  }
+}
+
+.error {
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: var(--error);
+}
