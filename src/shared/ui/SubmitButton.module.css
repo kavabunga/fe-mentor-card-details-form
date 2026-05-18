@@ -2,4 +2,25 @@
   padding: 0.5rem;
   border: 1px solid var(--border);
   border-radius: 0.4rem;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+
+  &:disabled {
+    background-color: var(--border);
+    color: var(--text);
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: var(--accent);
+    color: var(--bg);
+    cursor: pointer;
+    transform: scale(1.005);
+  }
+
+  &:active:not(:disabled) {
+    transform: scale(0.995);
+  }
 }

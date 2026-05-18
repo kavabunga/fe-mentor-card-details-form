@@ -14,7 +14,7 @@ export const CardFront = withForm({
       children: (values) => {
         return (
           <div className={styles.card}>
-            <p className={styles.cardNumber}>{values.cardNumber}</p>
+            <p className={styles.cardNumber}>{values.cardNumber.replace(/(.{4})/g, '$1 ')}</p>
             <p className={styles.cardholderName}>{values.cardholderName}</p>
             <p className={styles.expirationDate}>{values.expirationDate}</p>
           </div>

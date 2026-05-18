@@ -12,5 +12,6 @@ export const paymentCardFormOptions = formOptions({
   defaultValues,
   validators: {
     onChange: cardSchema,
+    onMount: cardSchema,
   },
 })
